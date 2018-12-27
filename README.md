@@ -1,5 +1,4 @@
-# React Express Starter Pack
-
+# React Express Airbnb Template
 A starter kit for building React-Express Applications. Devdependencies utilize airbnb-eslint settings and integrate prettier plugin from VScode.
 
 # Usage
