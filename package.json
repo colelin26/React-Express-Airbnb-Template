@@ -4,10 +4,9 @@
   "description": "A starter setup for React with an Express backend and custom dependencies",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "client": "cd client && npm start",
     "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "start": "node server.js",
     "heroku-postbuild": "mkdir upload && cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
